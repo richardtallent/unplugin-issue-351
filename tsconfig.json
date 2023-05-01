@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"jsx": "preserve",
+		"lib": ["esnext", "dom", "dom.iterable"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"newLine": "lf",
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": false,
+		"strictNullChecks": false,
+		"target": "esnext",
+		"types": ["unplugin-vue-macros/macros-global", "vite/client"],
+		"importsNotUsedAsValues": "error",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	},
+	"files": ["./shims-vue.d.ts"],
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "*.d.ts"],
+	"exclude": ["node_modules", "dist"]
+}
